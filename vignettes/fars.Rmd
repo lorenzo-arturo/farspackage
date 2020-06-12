@@ -1,5 +1,5 @@
 ---
-title: "fars"
+title: "farspackage"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{farspackage}
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(farspackage)
+library(knitr)
 ```
 
 	This package read, summarize and plott data from the  
@@ -27,16 +28,10 @@ To read data from a particular year, run:
 fars_data <- fars_read_years(2015)
 ```
 
-To summarize the accidents from 2013 to 2015:
+To summarize and view the accidents from 2013 to 2015:
 
 ```{r}
-fars_summary <- fars_summarize_years(2013:2015)
-```
-
-To view these accidents:
-
-```{r}
-fars_summary
+knitr::kable(fars_summarize_years(years = c(2013:2015))) 
 ```
 
 # Plotting 
