@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(farspackage)
+library(dplyr)
+library(tidyr)
 library(knitr)
 ```
 
