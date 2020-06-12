@@ -1,0 +1,24 @@
+Package: farspackage
+Type: Package to Read and Manipulate FARS Data
+Title: Package readFARS was designed to make it easy for R 
+    users to summarize and visualize the Fatality Analysis Reporting 
+    System or FARS data from the National Highway Traffic Safety
+    Administration NHTSA.
+Version: 0.1.0
+Author: Arturo Lorenzo <alvaldes01@yahoo.com.mx>
+Maintainer: Arturo Lorenzo <alvaldes01@yahoo.com.mx>
+Description: Package readFARS was designed to make it easy for R 
+    users to summarize and visualize the Fatality Analysis Reporting 
+    System or FARS data from the National Highway Traffic Safety
+    Administration NHTSA.
+Imports: dplyr (>= 0.7.4), magrittr (>= 1.5), maps (>= 3.2.0), tidyr (>= 0.7.2), readr (>= 1.1.1)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

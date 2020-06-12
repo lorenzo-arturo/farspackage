@@ -1,0 +1,46 @@
+---
+title: "fars"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{farspackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(farspackage)
+```
+
+	This package read, summarize and plott data from the  
+	plotting out data from the "Fatality Analysis Reporting System" project.
+
+To read data from a particular year, run:
+
+```{r}
+fars_data <- fars_read_years(2015)
+```
+
+To summarize the accidents from 2013 to 2015:
+
+```{r}
+fars_summary <- fars_summarize_years(2013:2015)
+```
+
+To view these accidents:
+
+```{r}
+fars_summary
+```
+
+# Plotting 
+To plot the locations of the accidents in a year:
+
+```{r}
+fars_map_state(12, 2014)
